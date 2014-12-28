@@ -1,0 +1,22 @@
+# Site settings
+
+title: Aubrey Taylor
+
+email: aubz@aubz.me
+
+description: >
+    Aubrey Taylor | A Los Angeles based full-stack web software developer.
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+
+url: "http://aubz.me" # the base hostname & protocol for your site
+
+twitter_username: aubricus
+
+github_username:  aubricus
+
+linkedin_username: aubreytaylor
+
+# Build settings
+
+markdown: kramdown
