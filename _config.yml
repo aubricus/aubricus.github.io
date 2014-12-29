@@ -20,3 +20,6 @@ linkedin_username: aubreytaylor
 # Build settings
 
 markdown: kramdown
+
+gems:
+- jekyll-compass
