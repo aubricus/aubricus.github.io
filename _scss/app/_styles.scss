@@ -35,7 +35,7 @@
 }
 
 .sidebar {
-    margin-bottom: font-scale(4) + 0px;
+    margin-bottom: font-scale(3) + 0px;
 }
 
 .sidebar__img {
@@ -56,12 +56,34 @@
 
 }
 
+.sidebar__header {
+    margin-bottom: font-scale(0) + 0px;
+
+    .header__text {
+        font-size: font-scale(2) + 0px;
+        margin-bottom: font-scale(-3) + 0px;
+    }
+    .header__sub {
+        max-width: 70%;
+        font-size: font-scale(-1) + 0px;
+        font-style: italic;
+        line-height: 1.3;
+        letter-spacing: 0.0150em;
+    }
+}
+
 .sidebar__links {
     .link {
+        font-size: font-scale(-1) + 0px;
+        margin-bottom: font-scale(-6) + 0px;
+
         a {
             color: $color-tundora;
             text-decoration: none;
         }
+    }
+    .link__icon {
+        margin-right: font-scale(-1) + 0px;
     }
 }
 
