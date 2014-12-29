@@ -1,0 +1,9 @@
+// clear sans
+// ..see:
+//      https://01.org/clear-sans
+
+@include font-face($clear-sans, $clear-sans-dir + 'regular/clear-sans-regular', normal, normal);
+@include font-face($clear-sans, $clear-sans-dir + 'medium/clear-sans-medium', 500, normal);
+@include font-face($clear-sans, $clear-sans-dir + 'bold/clear-sans-bold', bold, normal);
+@include font-face($clear-sans, $clear-sans-dir + 'light/clear-sans-light', 200, normal);
+@include font-face($clear-sans, $clear-sans-dir + 'thin/clear-sans-thin', 100, normal);
