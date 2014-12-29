@@ -7,6 +7,9 @@ email: aubz@aubz.me
 description: >
     Aubrey Taylor is totally awesome!
 
+author_description: >
+    Enjoys sunsets, plays well with others.
+
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 url: "http://aubz.me" # the base hostname & protocol for your site

@@ -12,6 +12,7 @@
 
 @import "vendor/built/core";
 @import "vendor/built/app";
+@import "vendor/built/grids/twbs";
 
 // init -------------------------------------------------------------------- //
 
@@ -21,6 +22,67 @@
 
 // project ----------------------------------------------------------------- //
 
-@import "./syntax-highlighting";
+@import "./pygments";
 @import "./fonts";
 @import "./ui";
+
+
+// TEMP; for prototyping only; TODO: refactor out
+
+.sidebar,
+.recent-posts {
+    text-align: left;
+}
+
+.sidebar {
+    margin-bottom: font-scale(4) + 0px;
+}
+
+.sidebar__img {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @include size(100px);
+
+    // minor reset
+    img {
+        @include fluid-image();
+        display: block;
+
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.sidebar__links {
+    .link {
+        a {
+            color: $color-tundora;
+            text-decoration: none;
+        }
+    }
+}
+
+.recent-posts {
+    .recent__list {
+
+    }
+
+    .recent__post {
+        margin-bottom: font-scale(1) + 0px;
+    }
+
+    [class*=post__meta-] {
+
+    }
+
+    .post__meta--title {
+        margin-bottom: font-scale(-1) + 0px;
+    }
+
+    .post__meta--date {
+
+    }
+}
