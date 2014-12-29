@@ -11,3 +11,6 @@ css_dir: css
 sass_dir: _scss
 images_dir: img
 javascripts_dir: js
+
+# for now change this to `compressed` before a deploy
+output_style: nested
