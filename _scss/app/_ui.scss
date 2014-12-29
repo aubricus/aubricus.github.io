@@ -1,0 +1,63 @@
+@import "vendor/built/app/utils/type";
+
+// colors
+
+.color {
+    &.main {
+
+    }
+    &.secondary {
+
+    }
+    &.tertiary {
+
+    }
+}
+
+.color__example {
+
+}
+
+.color__swatch {
+    width: 60px;
+    height: 60px;
+    background-color: grey
+}
+
+.color__label {
+    font-family: $clear-sans, sans-serif;
+    font-weight: 200;
+    font-size: font-scale(-1);
+}
+
+// fonts
+
+.font {
+    &.clear-sans {
+        font-family: $clear-sans, sans-serif;
+    }
+}
+
+.font__example {
+    font-size: font-scale(1) + 0px;
+
+    &.clear-sans-thin {
+        font-weight: 100;
+    }
+
+    &.clear-sans-light {
+        font-weight: 200;
+    }
+
+    &.clear-sans-regular {
+        font-weight: normal;
+    }
+
+    &.clear-sans-medium {
+        font-weight: 500;
+    }
+
+    &.clear-sans-bold {
+        font-weight: bold;
+    }
+}

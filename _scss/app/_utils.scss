@@ -1,0 +1,13 @@
+// Convert an int pixels
+
+@function rem($val) {
+  @if not unitless($val) {
+      $val: strip-units($val);
+  }
+
+  $base: $em-base;
+  @if not unitless($base) {
+      $base: strip-units($base);
+  }
+  @return ($val / $base) * 1rem;
+}

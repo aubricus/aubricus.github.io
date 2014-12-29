@@ -1,0 +1,12 @@
+// built config ------------------------------------------------------------ //
+
+$built-app: (
+    font-scale-ratio: $major-third,
+    font-family: ('ClearSans', sans-serif)
+);
+
+// app config -------------------------------------------------------------- //
+
+$fonts-dir: '../fonts/';
+$clear-sans-dir: $fonts-dir + 'clear-sans/';
+$clear-sans: 'ClearSans';
