@@ -29,6 +29,14 @@
     }
 }
 
+.example-block__header {
+    margin: (font-scale(1) + 0px) 0;
+    color: #fff;
+    padding: (font-scale(1) + 0px) 0;
+    background-color: #aaa;
+    font-weight: 200;
+}
+
 .typeface__example {
     font-size: font-scale(1) + 0px;
 
@@ -50,5 +58,13 @@
 
     &.clear-sans-bold {
         font-weight: bold;
+    }
+
+    &.font-awesome {
+        overflow: hidden; // clearfix alt
+        .example__item {
+            float: left;
+            margin-right: font-scale(-1) + 0px;
+        }
     }
 }

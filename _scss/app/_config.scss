@@ -3,6 +3,8 @@
 $fonts-dir: '../fonts/';
 $clear-sans-dir: $fonts-dir + 'clear-sans/';
 $clear-sans: 'ClearSans';
+$font-awesome: 'FontAwesome';
+$font-awesome-dir: $fonts-dir + 'font-awesome/';
 
 $color-tundora: #424242;
 
@@ -14,3 +16,6 @@ $built-app: (
     font-color: $color-tundora
 );
 
+$built-twbs: (
+
+);
