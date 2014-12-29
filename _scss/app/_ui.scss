@@ -1,44 +1,35 @@
 @import "vendor/built/app/utils/type";
 
-// colors
+// ui globals
 
-.color {
-    &.main {
+.ui-top-heading {
+    margin-bottom: font-scale(3) + 0px;
+    color: #fff;
+    padding: (font-scale(-1) + 0px) 0;
+    background-color: $color-tundora;
 
-    }
-    &.secondary {
-
-    }
-    &.tertiary {
-
-    }
-}
-
-.color__example {
-
-}
-
-.color__swatch {
-    width: 60px;
-    height: 60px;
-    background-color: grey
-}
-
-.color__label {
-    font-family: $clear-sans, sans-serif;
     font-weight: 200;
-    font-size: font-scale(-1);
+    text-transform: uppercase;
+}
+
+.ui-heading {
+    border-bottom: 1px solid $color-tundora;
+    padding-bottom: font-scale(0) + 0px;
+}
+
+[class*=example-block--]{
+    margin-bottom: font-scale(2) + 0px;
 }
 
 // fonts
 
-.font {
+.example-block__typeface {
     &.clear-sans {
         font-family: $clear-sans, sans-serif;
     }
 }
 
-.font__example {
+.typeface__example {
     font-size: font-scale(1) + 0px;
 
     &.clear-sans-thin {

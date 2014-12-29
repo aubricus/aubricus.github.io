@@ -1,12 +1,16 @@
-// built config ------------------------------------------------------------ //
-
-$built-app: (
-    font-scale-ratio: $major-third,
-    font-family: ('ClearSans', sans-serif)
-);
-
 // app config -------------------------------------------------------------- //
 
 $fonts-dir: '../fonts/';
 $clear-sans-dir: $fonts-dir + 'clear-sans/';
 $clear-sans: 'ClearSans';
+
+$color-tundora: #424242;
+
+// built config ------------------------------------------------------------ //
+
+$built-app: (
+    font-scale-ratio: $major-third,
+    font-family: ($clear-sans, sans-serif),
+    font-color: $color-tundora
+);
+
