@@ -1,15 +1,42 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
+<div class="page--post container">
+    <div class="row">
+        <!-- sidebar -->
+        {% include sidebar.html %}
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+        <!-- recent posts -->
+        <div class="post col-md-9">
+            <header class="post__header">
+                <h2 class="post__title">{{ page.title }}</h2>
+
+                {% if page.date %}
+                <p class="post__date">{{ page.date | date: "%b %-d, %Y" }}</p>
+                {% endif %}
+
+                {% if page.tags %}
+                <p class="post__tags">{{ page.tags | join: ', ' }}</p>
+                {% endif %}
+            </header>
+            <div class="post__content">
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+    {% if page.next %}
+
+    <div class="row">
+        <div class="next-post col-md-9 col-md-push-3">
+            <h6 class="next__header">Read This Next</h6>
+            <p class="next__title">{{ page.next.title }}</p>
+            <p class="next__excerpt">{{ page.next.excerpt }}</p>
+            <p class="next__link"><a href="{{ page.next.url }}">Continue</a></p>
+        </div>
+    </div>
+
+    {% endif %}
 
 </div>

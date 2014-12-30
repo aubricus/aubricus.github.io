@@ -2,24 +2,10 @@
 layout: default
 ---
 
-<div class="home container">
+<div class="page--home container">
     <div class="row">
         <!-- sidebar -->
-        <div class="sidebar col-md-3">
-            <div class="sidebar__img">
-                <img src="http://www.gravatar.com/avatar/63b2b23cc7e374f5b6c775972cec610b?s=240" alt="Image of Aubrey Taylor">
-            </div>
-            <header class="sidebar__header">
-                <h3 class="header__text">Aubrey Taylor</h3>
-                <p class="header__sub">{{site.author_description}}</p>
-            </header>
-            <div class="sidebar__links">
-                <p class="link"><a href="#"><span class="link__icon fa fa-envelope"></span>Email</a></p>
-                <p class="link"><a href="#"><span class="link__icon fa fa-github-alt"></span>GitHub</a></p>
-                <p class="link"><a href="#"><span class="link__icon fa fa-instagram"></span>Instagram</a></p>
-                <p class="link"><a href="#"><span class="link__icon fa fa-rss"></span>Subscribe!</a></p>
-            </div>
-        </div>
+        {% include sidebar.html %}
 
         <!-- recent posts -->
         <div class="recent-posts col-md-9">

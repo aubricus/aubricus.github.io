@@ -29,6 +29,106 @@
 
 // TEMP; for prototyping only; TODO: refactor out
 
+// globals
+
+[class*=col-] {
+    position: relative;
+}
+
+// header
+
+.header-block {
+    border-bottom: 1px solid $color-tundora;
+    margin-bottom: 30px;
+}
+
+.site-header {
+    margin-top: 15px;
+    padding-bottom: 15px;
+
+
+    // todo: this can probably be refactored
+    .mark {
+        color: white;
+        background: $color-tundora;
+        @include size(55px);
+        border-radius: 50%;
+        text-align: center;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mark__text {
+            position: relative;
+            top: 5px;
+            left: 1px;
+            font-size: 23px;
+            line-height: 0.9;
+            letter-spacing: 0.0400em;
+        }
+    }
+}
+
+.header__nav {
+    .nav__list {
+        padding: 11px 0;
+        text-align: right;
+    }
+
+    .nav__link {
+        display: inline-block;
+        padding: 0 6px;
+
+        &.active {
+            background: $color-tundora;
+
+            a {
+                color: white;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-tundora;
+        }
+    }
+}
+
+// footer
+
+.footer-block {
+    border-top: 1px solid $color-tundora;
+
+}
+
+.site-footer {
+    margin-bottom: gutter();
+    padding-top: gutter();
+    text-align: center;
+    color: #888;
+    font-weight: normal;
+    font-size: font-scale(-1) + 0px;
+    line-height: 1.2;
+
+
+    a {
+        color: #888;
+        text-decoration: none;
+    }
+}
+
+.footer__copyright {
+
+}
+
+.footer__license {
+
+}
+
+// sidebar
+
 .sidebar,
 .recent-posts {
     text-align: left;
@@ -42,6 +142,7 @@
     display: inline-block;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: 1px;
 
     @include size(100px);
 
@@ -87,6 +188,12 @@
     }
 }
 
+// home
+
+.page--home {
+
+}
+
 .recent-posts {
     .recent__list {
 
@@ -107,4 +214,52 @@
     .post__meta--date {
 
     }
+}
+
+// post page
+
+.page--post {
+
+}
+
+.post {
+    margin-bottom: font-scale(4) + 0px;
+}
+
+.post__header {
+
+}
+
+.post__title {
+
+}
+
+.post__date {
+
+}
+
+.post__content {
+
+}
+
+.next-post {
+    margin-bottom: font-scale(2) + 0px;
+}
+
+.next__header {
+    margin-bottom: font-scale(0) + 0px;
+}
+
+.next__title {
+    font-size: font-scale(3) + 0px;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+.next__excerpt {
+
+}
+
+.next__link {
+
 }

@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to Jekyll!"
 date:   2014-12-27 15:12:29
 categories: jekyll update
+tags: [sample post, welcome, help]
 ---
 
 
