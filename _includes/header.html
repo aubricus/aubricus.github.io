@@ -2,11 +2,14 @@
     <div class="row">
         <div class="col-xs-3">
             <header class="mark">
-                <a href="/"><span class="aubz-logo mark__logo"></span></a>
+                <a href="/"><span class="aubz-logo mark__logo"></span><span class="visually-hidden">Home</span></a>
             </header>
         </div>
         <div class="col-xs-9">
             <nav class="header__nav">
+                <header class="visually-hidden">
+                    <h1>Site Navigation</h1>
+                </header>
                 <ul class="nav__list">
                     <li class="nav__link {%if page.url == "/about/" %}active{% endif %}"><a href="/about">About</a></li>
                     <!-- Comment these back in as they become availalbe -->

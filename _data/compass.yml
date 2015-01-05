@@ -13,4 +13,4 @@ images_dir: img
 javascripts_dir: js
 
 # for now change this to `compressed` before a deploy
-output_style: nested
+output_style: compressed
