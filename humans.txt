@@ -33,3 +33,5 @@
     Fonts: Clear Sans, Font Awesome
     Build & Deployment: GitHub Pages, Make
     IDE: Sublime Text 3
+    Development Browser: Chrome
+    Development Browser Plugins: Ruul, Perfect Pixel, Devtools Theme: Zero Dark Matrix, Html5 Outliner
