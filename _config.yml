@@ -32,3 +32,8 @@ markdown: kramdown
 
 gems:
 - jekyll-compass
+
+exclude:
+- Makefile
+- README.md
+- ui
