@@ -8,17 +8,19 @@ layout: default
         {% include sidebar.html %}
 
         <!-- recent posts -->
-        <div class="recent-posts col-md-9">
+        <div class="recent-posts col-sm-9">
             <h3 class="recent__header">Read These Posts</h3>
-            {% for post in site.posts %}
                 <ul class="recent__list">
+                    {% for post in site.posts %}
                     <li class="recent__post">
-                        <h6 class="post__meta--title"><a href="{{ post.url | prepend: site.baseurl }}" class="post__link">{{ post.title }}</a></h6>
-                        <p class="post__meta--date">{{ post.date | date: "%b %-d, %Y" }}</p>
-                        <p class="post__meta--excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="post__link">
+                            <h6 class="post__title">{{ post.title }}</h6>
+                            <p class="post__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+                            <p class="post__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+                        </a>
                     </li>
+                    {% endfor %}
                 </ul>
-            {% endfor %}
         </div>
     </div>
 </div>

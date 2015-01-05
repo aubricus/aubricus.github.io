@@ -2,38 +2,45 @@
 layout: default
 ---
 
+<!-- <article role="article"
+  itemscope itemtype="http://schema.org/BlogPosting">
+<header>
+<h2>Heading</h2>
+<time itemprop="dateCreated" datetime="2013-10-30"> Wednesday 30 October 2013</time>
+</header>
+…
+</article> -->
+
 <div class="page--post container">
     <div class="row">
         <!-- sidebar -->
         {% include sidebar.html %}
 
-        <!-- recent posts -->
-        <div class="post col-md-9">
+        <!-- post -->
+        <article class="post col-sm-8" role="article" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post__header">
                 <h2 class="post__title">{{ page.title }}</h2>
 
                 {% if page.date %}
-                <p class="post__date">{{ page.date | date: "%b %-d, %Y" }}</p>
+                <time class="post__date" itemprop="dateCreated" datetime="{{ page.date | date: "%F"}}">Published: {{ page.date | date: "%d %B %Y" }}</time>
                 {% endif %}
 
-                {% if page.tags %}
-                <p class="post__tags">{{ page.tags | join: ', ' }}</p>
-                {% endif %}
             </header>
+
             <div class="post__content">
                 {{ content }}
             </div>
-        </div>
-    </div>
+
+        </article>
 
     {% if page.next %}
 
     <div class="row">
-        <div class="next-post col-md-9 col-md-push-3">
-            <h6 class="next__header">Read This Next</h6>
-            <p class="next__title">{{ page.next.title }}</p>
+        <div class="next-post col-sm-8 col-sm-push-3">
+            <h5 class="next__header">Read This Next</h5>
+            <h6 class="next__title">{{ page.next.title }}</h6>
             <p class="next__excerpt">{{ page.next.excerpt }}</p>
-            <p class="next__link"><a href="{{ page.next.url }}">Continue</a></p>
+            <p class="next__link"><a href="{{ page.next.url }}">Continue</a><span class="link-icon fa fa-chevron-circle-right"></span></p>
         </div>
     </div>
 

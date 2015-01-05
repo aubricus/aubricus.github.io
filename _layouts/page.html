@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<div class="post">
+<div class="page--generic container">
+    <div class="row">
+        <!-- sidebar -->
+        {% include sidebar.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
-  </article>
-
+        <article class="generic__article col-sm-8">
+            <header class="generic__header">
+                <h2 class="header__text">{{ page.title }}</h2>
+            </header>
+            <div class="generic__content">
+                {{ content }}
+            </div>
+        </article>
+    </div>
 </div>

@@ -2,14 +2,16 @@
     <div class="row">
         <div class="col-xs-3">
             <header class="mark">
-                <a href="/"><h1 class="mark__text">au<br />bz</h1></a>
+                <a href="/"><span class="aubz-logo mark__logo"></span></a>
             </header>
         </div>
         <div class="col-xs-9">
             <nav class="header__nav">
                 <ul class="nav__list">
-                    <li class="nav__link"><a href="/info">Info</a></li>
-                    <li class="nav__link"><a href="/resume">Resume</a></li>
+                    <li class="nav__link {%if page.url == "/about/" %}active{% endif %}"><a href="/about">About</a></li>
+                    <!-- Comment these back in as they become availalbe -->
+                    <!-- <li class="nav__link"><a href="/resume">Resume</a></li> -->
+                    <!-- <li class="nav__link"><a href="/contact">Contact</a></li> -->
                 </ul>
             </nav>
         </div>

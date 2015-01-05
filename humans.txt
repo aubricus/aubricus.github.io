@@ -1,15 +1,35 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* humanstxt.org/
+   The humans responsible & technology colophon */
 
-# TEAM
+/* TEAM */
 
-    <name> -- <role> -- <twitter>
+    Site: http://aubz.me
 
-# THANKS
+    Developer / Administrator: Aubrey Taylor
+    Contact: aubz@aubz.me
+    Twitter: @aubricus
 
-    <name>
 
-# TECHNOLOGY COLOPHON
+/* THANKS */
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+    Nik Kantar -- http://nkantar.com
+
+
+/* SITE */
+
+    http://aubz.me
+    Developer: Aubrey Taylor, @aubricus
+    Launched: 2015-01-04
+    Last Modified: 2015-01-04
+    Doctype:HTML5
+    Language: English (US)
+    IDE: Sublime Text 3, Photoshop, Illustrator
+
+
+/* TECHNOLOGY COLOPHON */
+
+    Standards: HTML5, OOCSS / BEM
+    Platforms: Jekyll, Jekyll-Compass, Icomoon, Ruby, GitHub, (A custom port of) Twitter Bootstrap Grid
+    Fonts: Clear Sans, Font Awesome
+    Build & Deployment: GitHub Pages, Make
+    IDE: Sublime Text 3

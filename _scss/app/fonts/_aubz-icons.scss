@@ -1,0 +1,21 @@
+@include font-face($aubz-icons, $aubz-icons-dir + 'aubz-icons', normal, normal);
+
+
+[class^="aubz-"], [class*=" aubz-"] {
+    font-family: $aubz-icons;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    // better font rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.aubz-logo:before {
+    content: "\e600";
+}
+

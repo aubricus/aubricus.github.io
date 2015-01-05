@@ -1,7 +1,22 @@
 // Syntax highlighting styles
 
 .highlight {
-    background: #fff;
+
+    overflow-x: scroll;
+
+    background-color: #efefef;
+    color: #333332;
+    margin-bottom: 1.5em;
+
+    pre {
+        position: relative;
+        margin: 0;
+        padding: 1em;
+
+        code {
+            white-space: pre;
+        }
+    }
 
     .c     { color: #998; font-style: italic } // Comment
     .err   { color: #a61717; background-color: #e3d2d2 } // Error

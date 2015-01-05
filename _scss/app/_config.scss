@@ -3,17 +3,26 @@
 $fonts-dir: '../fonts/';
 $clear-sans-dir: $fonts-dir + 'clear-sans/';
 $clear-sans: 'ClearSans';
-$font-awesome: 'FontAwesome';
-$font-awesome-dir: $fonts-dir + 'font-awesome/';
 
-$color-tundora: #424242;
+$font-awesome-dir: $fonts-dir + 'font-awesome/';
+$font-awesome: 'FontAwesome';
+
+$aubz-icons-dir: $fonts-dir + 'aubz-icons/';
+$aubz-icons: 'AubzIcons';
+
+$color-tundora-gray: #424242;
+$color-gray: #8E8E8E;
+$color-gallery-gray: #EFEFEF;
+$color-tuataraa-gray: #333333;
+$color-mabel-blue: #CCFFFE;
+$color-sandy-brown: #ffbc93;
 
 // built config ------------------------------------------------------------ //
 
 $built-app: (
     font-scale-ratio: $major-third,
     font-family: ($clear-sans, sans-serif),
-    font-color: $color-tundora
+    font-color: $color-tundora-gray
 );
 
 $built-twbs: (

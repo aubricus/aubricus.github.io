@@ -3,3 +3,9 @@
 # Allow crawling of all content
 User-agent: *
 Disallow: /ui
+Disallow: /fonts
+Disallow: /css
+
+# Remove these as they become available
+Disallow: /resume
+Disallow: /contact
