@@ -9,12 +9,12 @@ layout: default
 
         <!-- recent posts -->
         <div class="recent-posts col-sm-9">
-            <h3 class="recent__header">Read These Posts</h3>
+            <h2 class="recent__header">Read These Posts</h2>
                 <ul class="recent__list">
                     {% for post in site.posts %}
                     <li class="recent__post">
                         <a href="{{ post.url | prepend: site.baseurl }}" class="post__link">
-                            <h6 class="post__title">{{ post.title }}</h6>
+                            <h3 class="post__title">{{ post.title }}</h3>
                             <p class="post__date">{{ post.date | date: "%b %-d, %Y" }}</p>
                             <p class="post__excerpt">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
                         </a>
