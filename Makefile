@@ -51,3 +51,10 @@ endif
 
 	@echo ...Finished!
 
+
+# ..eample
+# 	make deploy
+.PHONY: deploy
+deploy:
+	git push origin master
+	git push --tags
