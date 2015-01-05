@@ -19,19 +19,12 @@ prod-serve:
 build:
 	jekyll build
 
-# params:
-# 	- tag: the tag associated with this release
-#
 # ..example:
-# 	 make release tag=v0.0.1-rc
+# 	 make release
 
 .PHONY: release
 release:
-ifndef tag
-	$(error tag is not set, see Makefile comments)
-endif
-
-	@echo Creating build for $(tag)...
+	@echo Creating release...
 
 	rm -rf ~/jekyll/build
 	mkdir -p ~/jekyll/build
@@ -44,8 +37,7 @@ endif
 	git commit -m 'release'
 	git checkout master
 	git merge -s recursive -X theirs --squash --no-commit release
-	git commit -am $(tag)
-	git tag -a $(tag) -m $(tag)
+	git commit -am 'release $(shell date +"%Y-%d-%m %T")'
 	git branch -D release
 	git checkout develop
 
@@ -57,4 +49,3 @@ endif
 .PHONY: deploy
 deploy:
 	git push origin master
-	git push --tags
