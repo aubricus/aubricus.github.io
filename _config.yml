@@ -1,6 +1,6 @@
 # Site settings
 
-title: Aubrey Taylor | Los Angeles based software developer.
+title: Aubrey Taylor | Los Angeles based web / software developer.
 
 gravatar_url: http://www.gravatar.com/avatar/63b2b23cc7e374f5b6c775972cec610b?s=240
 
@@ -9,10 +9,10 @@ email: aubz@aubz.me
 author_full_name: Aubrey Taylor
 
 description: >
-    Aubrey Taylor is totally awesome!
+    Aubrey Taylor is an LA based web / software developer specializing in rich, interactive HTML, JS, CSS based web experiences.
 
 author_description: >
-    Enjoys sunsets, plays well with others.
+    LA based developer, enjoys the intewebs and biking.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 
