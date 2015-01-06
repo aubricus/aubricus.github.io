@@ -6,29 +6,29 @@
 </description>
     <link>http://aubz.me/</link>
     <atom:link href="http://aubz.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Jan 2015 01:22:48 -0800</pubDate>
-    <lastBuildDate>Mon, 05 Jan 2015 01:22:48 -0800</lastBuildDate>
+    <pubDate>Mon, 05 Jan 2015 22:48:12 -0800</pubDate>
+    <lastBuildDate>Mon, 05 Jan 2015 22:48:12 -0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Aubz.me Launches</title>
-        <description>&lt;p&gt;It feels good to scratch off the ol’ To-Do List an item that’s been neglected for way too long. A few false starts and some expired domain names later; I finally got around to it.&lt;/p&gt;
+        <description>&lt;p&gt;It feels good scratching an item off the ol’ To-Do List I’ve been neglecting for far too long.&lt;/p&gt;
 
-&lt;p&gt;After work projects and personal, for-fun, projects, maintaining – let alone creating – a personal site can rank pretty low on the scale of &lt;em&gt;“Things I Like to do With My Free Time.”&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;After work and personal projects, maintaining – let alone creating – a personal site ranks pretty low on the scale of &lt;em&gt;“Things I Like to do With My Free Time.”&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;Luckily, an off-the-cuff chat, with a &lt;a href=&quot;http://nkantar.com&quot;&gt;friend and co-worker&lt;/a&gt; of mine, lead me to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;; a really handy “blog-aware”, static-site generator that eschews complex CMS and database setups for &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; and static pages – which is just perfect for me.&lt;/p&gt;
+&lt;p&gt;Sadly, my past attempts have floundered after running into complex installation / hosting requirements, complicated interfaces, my distaste for Rich Text Editors, subscription fees, and sometimes my own laziness.&lt;/p&gt;
+
+&lt;p&gt;Luckily, an impromptu chat with a &lt;a href=&quot;http://nkantar.com&quot;&gt;friend&lt;/a&gt; lead me to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;; a really handy “blog-aware”, static-site generator that eschews complex CMS and database for &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; and static pages.&lt;/p&gt;
+
+&lt;p&gt;Finally I can create posts in my beloved Markdown, have complete control over my site, and never have to touch a CMS interface. Woot!&lt;/p&gt;
 
 &lt;p class=&quot;notice&quot;&gt;Look out for a post about my experience implementing Jekyll.&lt;/p&gt;
 
-&lt;p&gt;What I love about Jekyll is that I get to write my posts in Markdown. No shitty, rich text editor for me. Just simple, fast, efficient Markdown. It’s almost a dream come true.&lt;/p&gt;
+&lt;p&gt;So, here’s to Jekyll, this blog, and writing more. &lt;span class=&quot;fa fa-beer&quot;&gt;&lt;/span&gt; Cheers!&lt;/p&gt;
 
-&lt;p&gt;Maybe more importantly I can run this site locally, on my machine. This means I can work whenever I’m feeling inspired; Internet connection or no.&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;Initial development involved approximately one &lt;em&gt;casual&lt;/em&gt; week to stand up and befriend Jekyll, create a custom design, and write this post. Not bad.&lt;/p&gt;
 
-&lt;p&gt;Additionally, I own all the content I write. I have the source locally and leverage GitHub for [free!] hosting and backup. A pretty nice setup if you ask me.&lt;/p&gt;
-
-&lt;p&gt;So, here’s to writing more. &lt;span class=&quot;fa fa-beer&quot;&gt;&lt;/span&gt; Cheers!&lt;/p&gt;
-
-&lt;p class=&quot;notice&quot;&gt;Initial development involved approximately one &lt;em&gt;casual&lt;/em&gt; week to stand up, befriend Jekyll, develop a custom design, and write this post. Not bad.&lt;/p&gt;
+&lt;!-- Links --&gt;
 
 </description>
         <pubDate>Sun, 04 Jan 2015 11:16:00 -0800</pubDate>
