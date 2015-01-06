@@ -16,9 +16,6 @@ Luckily, an impromptu chat with a [friend] lead me to [Jekyll]; a really handy "
 
 Finally I can create posts in my beloved Markdown, have complete control over my site, and never have to touch a CMS interface. Woot!
 
-Look out for a post about my experience implementing Jekyll.
-{: .notice}
-
 So, here's to Jekyll, this blog, and writing more. <span class="fa fa-beer"></span> Cheers!
 
 Initial development involved approximately one _casual_ week to stand up and befriend Jekyll, create a custom design, and write this post. Not bad.
