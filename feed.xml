@@ -6,8 +6,8 @@
 </description>
     <link>http://aubz.me/</link>
     <atom:link href="http://aubz.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 05 Jan 2015 22:48:12 -0800</pubDate>
-    <lastBuildDate>Mon, 05 Jan 2015 22:48:12 -0800</lastBuildDate>
+    <pubDate>Mon, 05 Jan 2015 22:50:04 -0800</pubDate>
+    <lastBuildDate>Mon, 05 Jan 2015 22:50:04 -0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -21,8 +21,6 @@
 &lt;p&gt;Luckily, an impromptu chat with a &lt;a href=&quot;http://nkantar.com&quot;&gt;friend&lt;/a&gt; lead me to &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;; a really handy “blog-aware”, static-site generator that eschews complex CMS and database for &lt;a href=&quot;http://en.wikipedia.org/wiki/Markdown&quot;&gt;Markdown&lt;/a&gt; and static pages.&lt;/p&gt;
 
 &lt;p&gt;Finally I can create posts in my beloved Markdown, have complete control over my site, and never have to touch a CMS interface. Woot!&lt;/p&gt;
-
-&lt;p class=&quot;notice&quot;&gt;Look out for a post about my experience implementing Jekyll.&lt;/p&gt;
 
 &lt;p&gt;So, here’s to Jekyll, this blog, and writing more. &lt;span class=&quot;fa fa-beer&quot;&gt;&lt;/span&gt; Cheers!&lt;/p&gt;
 
