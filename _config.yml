@@ -1,3 +1,7 @@
+# Jekyll settings
+
+permalink: pretty
+
 # Site settings
 
 title: Aubrey Taylor | Los Angeles based web / software developer.

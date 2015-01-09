@@ -2,15 +2,6 @@
 layout: default
 ---
 
-<!-- <article role="article"
-  itemscope itemtype="http://schema.org/BlogPosting">
-<header>
-<h2>Heading</h2>
-<time itemprop="dateCreated" datetime="2013-10-30"> Wednesday 30 October 2013</time>
-</header>
-…
-</article> -->
-
 <div class="page--post container">
     <div class="row">
         <!-- sidebar -->
@@ -19,10 +10,10 @@ layout: default
         <!-- post -->
         <article class="post col-sm-8" role="article" itemscope itemtype="http://schema.org/BlogPosting">
             <header class="post__header">
-                <h2 class="post__title">{{ page.title }}</h2>
+                <h2 class="post__title"><a href="{{ page.url | prepend: site.base_url }}" class="post__title-link">{{ page.title }}</a></h2>
 
                 {% if page.date %}
-                <time class="post__date" itemprop="dateCreated" datetime="{{ page.date | date: "%F"}}">Published: {{ page.date | date: "%d %B %Y" }}</time>
+                <time class="post__metadata" itemprop="dateCreated" datetime="{{ page.date | date: "%F"}}">Published: {{ page.date | date: "%d %B %Y" }}</time>
                 {% endif %}
 
             </header>
@@ -33,14 +24,18 @@ layout: default
 
         </article>
 
+    </div>
+
     {% if page.next %}
 
     <div class="row">
-        <div class="next-post col-sm-8 col-sm-push-3">
-            <h5 class="next__header">Read This Next</h5>
-            <h6 class="next__title">{{ page.next.title }}</h6>
-            <p class="next__excerpt">{{ page.next.excerpt }}</p>
-            <p class="next__link"><a href="{{ page.next.url }}">Continue</a><span class="link-icon fa fa-chevron-circle-right"></span></p>
+        <div class="next-post post-list-item col-sm-8 col-sm-push-3">
+            <h5 class="eyebrow-header">Read This Next</h5>
+            <a href="{{ page.next.url | prepend: site.baseurl }}" class="item__link">
+                <h6 class="item__title">{{ page.next.title }}</h6>
+                <p class="item__excerpt">{{ page.next.excerpt }}</p>
+            </a>
+            <!-- <p class="next__link"><a href="{{ page.next.url }}">Continue<span class="link-icon fa fa-chevron-circle-right"></span></a></p> -->
         </div>
     </div>
 

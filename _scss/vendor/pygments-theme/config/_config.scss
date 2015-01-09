@@ -1,0 +1,14 @@
+@import "./colors";
+
+$pygments: () !default;
+
+@function get-pygments-config($overrides: $pygments) {
+    /**
+     * returns pygments configuration
+     */
+
+    $config: ();
+    $config: map-merge($config, get-pygments-color-config($overrides));
+
+    @return $config;
+}

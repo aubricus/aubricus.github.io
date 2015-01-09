@@ -5,7 +5,7 @@ require:
 - susy
 - breakpoint
 
-project_path: /Users/aubreytaylor/Repos/aubz.me
+project_path: /Users/aubreytaylor/Repos/me.aubz
 http_path: /
 css_dir: css
 sass_dir: _scss

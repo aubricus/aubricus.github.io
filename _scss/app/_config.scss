@@ -10,6 +10,36 @@ $font-awesome: 'FontAwesome';
 $aubz-icons-dir: $fonts-dir + 'aubz-icons/';
 $aubz-icons: 'AubzIcons';
 
+// listed from darkest to light
+
+$color-mine-shaft-gray: #313131; // a pastel, dark gray
+$color-boulder-gray: #777; // a pastel, medium gray
+$color-cararra-gray: #e8e7e5; // a pastel, medium gray
+$color-tangerine-orange: #fc9b7a; // a pastel, light orange
+$color-fountain-blue: #51a1c4; // a pastel, light blue
+$color-foam-blue: #d4f0fc; // a pastel, very-light blue
+$color-rock-white: #f1ede2; // an off, pastel white
+$color-white: #fff;
+
+$color-palette: (
+    pastel-dark-gray: $color-mine-shaft-gray,
+    pastel-medium-gray: $color-boulder-gray,
+    pastel-light-gray: $color-cararra-gray,
+    pastel-orange: $color-tangerine-orange,
+    pastel-blue: $color-fountain-blue,
+    pastel-light-blue: $color-foam-blue,
+    pastel-white: $color-rock-white,
+    white: $color-white
+);
+
+@function palette($index) {
+    @return nth(nth($color-palette, $index), 2);
+}
+
+@function color-palette-get($key) {
+    @return map-get($color-palette, $key);
+}
+
 $color-tundora-gray: #424242;
 $color-gray: #8E8E8E;
 $color-gallery-gray: #EFEFEF;
@@ -22,9 +52,47 @@ $color-sandy-brown: #ffbc93;
 $built-app: (
     font-scale-ratio: $major-third,
     font-family: ($clear-sans, sans-serif),
-    font-color: $color-tundora-gray
+    font-color: color-palette-get(pastel-dark-gray)
 );
 
 $built-twbs: (
 
+);
+
+// pygments-theme-config --------------------------------------------------- //
+
+$pygments-light: (
+    color-bg: color-palette-get(pastel-white),
+    color-text: color-palette-get(pastel-dark-gray)
+);
+
+$pygments-dark: (
+    color-bg: color-palette-get(pastel-dark-gray),
+    color-text: color-palette-get(pastel-white),
+    color-literal-string: color-palette-get(pastel-orange),
+    color-literal-string-backtick: color-palette-get(pastel-orange),
+    color-literal-string-char: color-palette-get(pastel-orange),
+    color-literal-string-doc: color-palette-get(pastel-orange),
+    color-literal-string-double: color-palette-get(pastel-orange),
+    color-literal-string-escape: color-palette-get(pastel-orange),
+    color-literal-string-heredoc: color-palette-get(pastel-orange),
+    color-literal-string-interpol: color-palette-get(pastel-orange),
+    color-literal-string-other: color-palette-get(pastel-orange),
+    color-literal-string-regex: color-palette-get(pastel-orange),
+    color-literal-string-single: color-palette-get(pastel-orange),
+    color-literal-string-symbol: color-palette-get(pastel-orange),
+    color-name-attribute: color-palette-get(pastel-blue),
+    color-name-builtin: color-palette-get(pastel-blue),
+    color-name-class: color-palette-get(pastel-blue),
+    color-name-constant: color-palette-get(pastel-blue),
+    color-name-entity: color-palette-get(pastel-blue),
+    color-name-exception: color-palette-get(pastel-blue),
+    color-name-function: color-palette-get(pastel-blue),
+    color-name-namespace: color-palette-get(pastel-blue),
+    color-name-tag: color-palette-get(pastel-blue),
+    color-name-variable: color-palette-get(pastel-blue),
+    color-name-builtin-pseudo: color-palette-get(pastel-light-blue),
+    color-name-variable-class: color-palette-get(pastel-light-blue),
+    color-name-variable-global: color-palette-get(pastel-light-blue),
+    color-name-variable-instance: color-palette-get(pastel-light-blue),
 );

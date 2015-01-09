@@ -1,0 +1,83 @@
+@mixin print-pygments-theme($overrides:(), $prefix: '') {
+    $base-config: $pygments;
+    $theme-config: map-merge($pygments, $overrides);
+
+    $class: 'highlight';
+
+    @if($prefix != '') {
+        $class: $prefix + '-' + $class;
+    }
+
+    .#{$class} {
+        background-color: map-get($theme-config, color-bg);
+        color: map-get($theme-config, color-text);
+
+        .c     { color: map-get($theme-config, color-comment); font-style: italic } // Comment
+        .err   { color: map-get($theme-config, color-error); background-color: map-get($theme-config, color-error-bg) } // Error
+        .k     { color: map-get($theme-config, color-keyword); font-weight: bold } // Keyword
+        .o     { color: map-get($theme-config, color-operator); font-weight: bold } // Operator
+
+        .cm    { color: map-get($theme-config, color-comment-multiline); font-style: italic } // Comment.Multiline
+        .cp    { color: map-get($theme-config, color-comment-preproc); font-weight: bold } // Comment.Preproc
+        .c1    { color: map-get($theme-config, color-comment-single); font-style: italic } // Comment.Single
+        .cs    { color: map-get($theme-config, color-comment-special); font-weight: bold; font-style: italic } // Comment.Special
+        .gd    { color: map-get($theme-config, color-generic-deleted); background-color: map-get($theme-config, color-generic-deleted-bg) } // Generic.Deleted
+        .gd .x { color: map-get($theme-config, color-generic-deleted-specific); background-color: map-get($theme-config, color-generic-deleted-specific-bg) } // Generic.Deleted.Specific
+
+        .ge    { color: map-get($theme-config, color-generic-emph); font-style: italic } // Generic.Emph
+
+        .gr    { color: map-get($theme-config, color-generic-error) } // Generic.Error
+        .gh    { color: map-get($theme-config, color-generic-heading) } // Generic.Heading
+        .gi    { color: map-get($theme-config, color-generic-inserted); background-color: map-get($theme-config, color-generic-inserted-bg) } // Generic.Inserted
+        .gi .x { color: map-get($theme-config, color-generic-inserted-specific); background-color: map-get($theme-config, color-generic-inserted-specific-bg) } // Generic.Inserted.Specific
+        .go    { color: map-get($theme-config, color-generic-output) } // Generic.Output
+        .gp    { color: map-get($theme-config, color-generic-prompt) } // Generic.Prompt
+
+        .gs    { color: map-get($theme-config, color-generic-strong); font-weight: bold } // Generic.Strong
+
+        .gu    { color: map-get($theme-config, color-generic-subheading) } // Generic.Subheading
+        .gt    { color: map-get($theme-config, color-generic-traceback) } // Generic.Traceback
+        .kc    { color: map-get($theme-config, color-keyword-constant); font-weight: bold } // Keyword.Constant
+        .kd    { color: map-get($theme-config, color-keyword-declaration); font-weight: bold } // Keyword.Declaration
+        .kp    { color: map-get($theme-config, color-keyword-pseudo); font-weight: bold } // Keyword.Pseudo
+        .kr    { color: map-get($theme-config, color-keyword-reserved); font-weight: bold } // Keyword.Reserved
+
+        .kt    { color: map-get($theme-config, color-keyword-type); font-weight: bold } // Keyword.Type
+        .m     { color: map-get($theme-config, color-literal-number) } // Literal.Number
+        .s     { color: map-get($theme-config, color-literal-string) } // Literal.String
+        .na    { color: map-get($theme-config, color-name-attribute) } // Name.Attribute
+        .nb    { color: map-get($theme-config, color-name-builtin) } // Name.Builtin
+        .nc    { color: map-get($theme-config, color-name-class); font-weight: bold } // Name.Class
+        .no    { color: map-get($theme-config, color-name-constant) } // Name.Constant
+        .ni    { color: map-get($theme-config, color-name-entity) } // Name.Entity
+        .ne    { color: map-get($theme-config, color-name-exception); font-weight: bold } // Name.Exception
+        .nf    { color: map-get($theme-config, color-name-function); font-weight: bold } // Name.Function
+        .nn    { color: map-get($theme-config, color-name-namespace) } // Name.Namespace
+        .nt    { color: map-get($theme-config, color-name-tag) } // Name.Tag
+        .nv    { color: map-get($theme-config, color-name-variable) } // Name.Variable
+
+        .ow    { color: map-get($theme-config, color-operator-word); font-weight: bold } // Operator.Word
+
+        .w     { color: map-get($theme-config, color-text-whitespace) } // Text.Whitespace
+        .mf    { color: map-get($theme-config, color-literal-number-float) } // Literal.Number.Float
+        .mh    { color: map-get($theme-config, color-literal-number-hex) } // Literal.Number.Hex
+        .mi    { color: map-get($theme-config, color-literal-number-integer) } // Literal.Number.Integer
+        .mo    { color: map-get($theme-config, color-literal-number-oct) } // Literal.Number.Oct
+        .sb    { color: map-get($theme-config, color-literal-string-backtick) } // Literal.String.Backtick
+        .sc    { color: map-get($theme-config, color-literal-string-char) } // Literal.String.Char
+        .sd    { color: map-get($theme-config, color-literal-string-doc) } // Literal.String.Doc
+        .s2    { color: map-get($theme-config, color-literal-string-double) } // Literal.String.Double
+        .se    { color: map-get($theme-config, color-literal-string-escape) } // Literal.String.Escape
+        .sh    { color: map-get($theme-config, color-literal-string-heredoc) } // Literal.String.Heredoc
+        .si    { color: map-get($theme-config, color-literal-string-interpol) } // Literal.String.Interpol
+        .sx    { color: map-get($theme-config, color-literal-string-other) } // Literal.String.Other
+        .sr    { color: map-get($theme-config, color-literal-string-regex) } // Literal.String.Regex
+        .s1    { color: map-get($theme-config, color-literal-string-single) } // Literal.String.Single
+        .ss    { color: map-get($theme-config, color-literal-string-symbol) } // Literal.String.Symbol
+        .bp    { color: map-get($theme-config, color-name-builtin-pseudo) } // Name.Builtin.Pseudo
+        .vc    { color: map-get($theme-config, color-name-variable-class) } // Name.Variable.Class
+        .vg    { color: map-get($theme-config, color-name-variable-global) } // Name.Variable.Global
+        .vi    { color: map-get($theme-config, color-name-variable-instance) } // Name.Variable.Instance
+        .il    { color: map-get($theme-config, color-literal-number-integer-long) } // Literal.Number.Integer.Long
+    }
+}
