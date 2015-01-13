@@ -64,6 +64,13 @@ module Jekyll
 end
 {% endhighlight %}
 
+{% highlight js %}
+function helloWorld() {
+  window.console.log('hi world');
+}
+{% endhighlight %}
+
+
 
 ### Standard Code Block
 

@@ -46,7 +46,7 @@ Working with small to medium, startup style teams under constantly shifting requ
 
 Aubrey enjoys:
 
-Biking, going on adventures hikes, distance running, playing guitar and bass, and snowboarding (weather and season permitting).
+Biking, bike commuting, going on adventures hikes, distance running, playing guitar and bass, and snowboarding (weather and season permitting). Essentially, when he's not coding he's either outside or playing music.
 
 <!-- Comment this back-in when Contact page is finished -->
 <!-- ### Want to get in touch? -->

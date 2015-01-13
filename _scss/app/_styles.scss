@@ -14,25 +14,20 @@
 @import "vendor/built/app";
 @import "vendor/built/grids/twbs";
 
-@import "vendor/pygments-theme";
-
 // init -------------------------------------------------------------------- //
 
 @include print-normalize();
 @include print-built-app-scaffold();
 @include print-built-app-helpers();
 
-@include print-pygments-theme($pygments-light, 'light');
-@include print-pygments-theme($pygments-dark);
-
 // project ----------------------------------------------------------------- //
 
-@import "./pygments";
 @import "./fonts";
+@import "./pygments";
+
+// TODO: this has to come out eventually
 @import "./ui";
 
-
-$all-headings: (h1, h2, h3, h4, h5, h6);
 
 // TEMP; for prototyping only; TODO: refactor out
 
@@ -133,6 +128,12 @@ $all-headings: (h1, h2, h3, h4, h5, h6);
             margin-bottom: 0;
         }
     }
+
+    .footnotes {
+        font-size: font-scale(-1) + 0px;
+        border-top: 1px solid color-palette-get(pastel-light-gray);
+        // margin-top: 75px;
+    }
 }
 
 // BEM
@@ -218,6 +219,7 @@ $all-headings: (h1, h2, h3, h4, h5, h6);
         font-size: font-scale(5) + 0px;
         margin-bottom: 0px;
         line-height: 1;
+        letter-spacing: -0.0700rem;
     }
 
     .post__metadata {
@@ -274,7 +276,8 @@ a {
 
 .header-block {
     border-bottom: 1px solid color-palette-get(pastel-dark-gray);
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
 .site-header {
@@ -498,25 +501,37 @@ a {
 }
 
 .generic__header {
+    display: none;
 
     .header__text {
-        font-size: font-scale(5) + 0px;
+        font-size: font-scale(7) + 0px;
         margin-bottom: 0;
     }
 }
 
 .generic__content {
-    min-height: 600px;
-    margin: 18px 0 70px;
-
     @extend .injected-content;
+
+    min-height: 600px;
+    margin: 0 0 70px;
+
 }
 
 @include breakpoint(map-get($built-twbs, grid-width-sm)) {
+    .header-block {
+        margin-bottom: 60px;
+    }
+
     .generic__header {
+        display: inherit;
+
         .header__text {
-            font-size: font-scale(7) + 0px;
+            // font-size: font-scale(7) + 0px;
         }
+    }
+
+    .generic__content {
+        margin-top: 45px;
     }
 
     .recent__header,

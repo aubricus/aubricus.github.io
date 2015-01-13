@@ -1,5 +1,0 @@
-@import "./config/config";
-@import "./utils/config";
-@import "./utils/theme";
-
-$pygments: get-pygments-config($overrides: $pygments);
