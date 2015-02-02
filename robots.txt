@@ -5,6 +5,7 @@ User-agent: *
 Disallow: /ui
 Disallow: /fonts
 Disallow: /css
+Disallow: /hidden
 
 # Remove these as they become available
 Disallow: /resume
