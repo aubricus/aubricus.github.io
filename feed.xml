@@ -6,8 +6,8 @@
 </description>
     <link>http://aubz.me/</link>
     <atom:link href="http://aubz.me/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 02 Feb 2015 23:02:00 -0800</pubDate>
-    <lastBuildDate>Mon, 02 Feb 2015 23:02:00 -0800</lastBuildDate>
+    <pubDate>Mon, 02 Feb 2015 23:04:43 -0800</pubDate>
+    <lastBuildDate>Mon, 02 Feb 2015 23:04:43 -0800</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -53,9 +53,11 @@
 
 </description>
         <pubDate>Mon, 02 Feb 2015 13:35:00 -0800</pubDate>
-        <link>http://aubz.me/2015/02/02/jim-and-mary/</link>
-        <guid isPermaLink="true">http://aubz.me/2015/02/02/jim-and-mary/</guid>
+        <link>http://aubz.me/hidden/2015/02/02/jim-and-mary/</link>
+        <guid isPermaLink="true">http://aubz.me/hidden/2015/02/02/jim-and-mary/</guid>
         
+        
+        <category>hidden</category>
         
       </item>
     
