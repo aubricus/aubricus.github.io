@@ -27,7 +27,7 @@ layout: default
     </div>
 
     {% if page.next %}
-
+        {% if page.next.categories[0] != 'hidden' %}
     <div class="row">
         <div class="next-post post-list-item col-sm-8 col-sm-push-3">
             <h5 class="eyebrow-header">Read This Next</h5>
@@ -35,10 +35,9 @@ layout: default
                 <h6 class="item__title">{{ page.next.title }}</h6>
                 <p class="item__excerpt">{{ page.next.excerpt }}</p>
             </a>
-            <!-- <p class="next__link"><a href="{{ page.next.url }}">Continue<span class="link-icon fa fa-chevron-circle-right"></span></a></p> -->
         </div>
     </div>
-
+        {% endif %}
     {% endif %}
 
 </div>
