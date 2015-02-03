@@ -2,6 +2,10 @@
 
 > Changes to posts are not recorded here. Complete post file history is avaialbe from GitHub or the git repository.
 
+## v1.1.2
+
+- removed hidden posts from "next post"
+
 ## v1.1.1
 
 - added ability to create hidden posts
