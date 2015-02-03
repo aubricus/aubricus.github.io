@@ -45,4 +45,4 @@ I think it's a safe bet, but you never know!
 - [aubricus@gmail.com](mailto:aubricus@gmail.com)
 - 323 • 761 • 0096
 
-[the plan]: ({% post_url 2015-02-02-a-plus-k %})
+[the plan]: {% post_url 2015-02-02-a-plus-k %}
