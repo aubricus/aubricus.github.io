@@ -3,7 +3,7 @@ layout: post
 title: "A Special Message for Jim and Mary"
 date: 2015-02-02 21:35:00
 modified: 2015-02-02 21:55:00
-category:
+category: hidden
 ---
 
 Kelly's Dad, Kelly's Mom. AKA Jim and Mary.
